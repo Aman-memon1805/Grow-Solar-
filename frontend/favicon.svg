@@ -1,35 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <!-- Background -->
-  <rect width="200" height="200" rx="20" fill="#0D0D0D"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+  <!-- Outer dark circle -->
+  <circle cx="50" cy="50" r="50" fill="#0D0D0D"/>
+
+  <!-- Sun glow ring -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="#FF6B00" stroke-width="2" opacity="0.3"/>
+
+  <!-- Sun body -->
+  <circle cx="50" cy="50" r="36" fill="#FF6B00"/>
+
+  <!-- Sun inner bright center -->
+  <circle cx="50" cy="50" r="24" fill="#FFB347"/>
 
   <!-- Sun rays -->
-  <line x1="100" y1="18" x2="100" y2="8" stroke="#FFB347" stroke-width="5" stroke-linecap="round"/>
-  <line x1="64" y1="28" x2="58" y2="20" stroke="#FFB347" stroke-width="5" stroke-linecap="round"/>
-  <line x1="136" y1="28" x2="142" y2="20" stroke="#FFB347" stroke-width="5" stroke-linecap="round"/>
-  <line x1="40" y1="58" x2="32" y2="53" stroke="#FFB347" stroke-width="5" stroke-linecap="round"/>
-  <line x1="160" y1="58" x2="168" y2="53" stroke="#FFB347" stroke-width="5" stroke-linecap="round"/>
+  <line x1="50" y1="6"  x2="50" y2="1"  stroke="#FF6B00" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="50" y1="94" x2="50" y2="99" stroke="#FF6B00" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="6"  y1="50" x2="1"  y2="50" stroke="#FF6B00" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="94" y1="50" x2="99" y2="50" stroke="#FF6B00" stroke-width="3.5" stroke-linecap="round"/>
 
-  <!-- Half sun -->
-  <clipPath id="half">
-    <rect x="30" y="70" width="140" height="70"/>
-  </clipPath>
-  <circle cx="100" cy="70" r="46" fill="#FF6B00" clip-path="url(#half)"/>
-  <circle cx="100" cy="70" r="30" fill="#FFB347" clip-path="url(#half)"/>
+  <line x1="19" y1="19" x2="15" y2="15" stroke="#FF6B00" stroke-width="3" stroke-linecap="round"/>
+  <line x1="81" y1="19" x2="85" y2="15" stroke="#FF6B00" stroke-width="3" stroke-linecap="round"/>
+  <line x1="19" y1="81" x2="15" y2="85" stroke="#FF6B00" stroke-width="3" stroke-linecap="round"/>
+  <line x1="81" y1="81" x2="85" y2="85" stroke="#FF6B00" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Solar panel -->
-  <rect x="36" y="74" width="128" height="72" rx="4" fill="#161616" stroke="#FF6B00" stroke-width="2.5"/>
-  <!-- Panel grid vertical -->
-  <line x1="79" y1="74" x2="79" y2="146" stroke="#FF6B00" stroke-width="1.5" opacity="0.6"/>
-  <line x1="121" y1="74" x2="121" y2="146" stroke="#FF6B00" stroke-width="1.5" opacity="0.6"/>
-  <!-- Panel grid horizontal -->
-  <line x1="36" y1="109" x2="164" y2="109" stroke="#FF6B00" stroke-width="1.5" opacity="0.6"/>
+  <!-- GS text bold and readable -->
+  <text
+    x="50" y="58"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="28"
+    font-weight="900"
+    fill="#0D0D0D"
+    letter-spacing="-1">GS</text>
 
-  <!-- Divider -->
-  <line x1="36" y1="158" x2="164" y2="158" stroke="#FF6B00" stroke-width="1.5" opacity="0.4"/>
-
-  <!-- GROW text -->
-  <text x="100" y="175" text-anchor="middle" font-family="Arial Black, Arial" font-size="26" font-weight="900" fill="#FF6B00" letter-spacing="3">GROW</text>
-
-  <!-- SOLAR text -->
-  <text x="100" y="196" text-anchor="middle" font-family="Arial Black, Arial" font-size="26" font-weight="900" fill="#ffffff" letter-spacing="3">SOLAR</text>
 </svg>
