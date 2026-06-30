@@ -377,3 +377,7 @@ footer p { font-size: 0.8rem; color: var(--muted); }
 #dev-credit a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  #nav-user-menu { display: none; }
+}

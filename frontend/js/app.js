@@ -68,18 +68,29 @@ function navigate(page) {
 function updateNav() {
   const user = getUser();
   const menu = $('#nav-user-menu');
+  const mobileMenu = $('#nav-user-menu-mobile');
+
+  let desktopHTML, mobileHTML;
 
   if (user) {
-    menu.innerHTML = `
+    desktopHTML = `
       <a class="nav-links-item" onclick="toggleDropdown()">👤 ${user.name.split(' ')[0]} ▾</a>
       <div class="user-dropdown" id="user-dd">
         ${user.role === 'admin' ? `<a onclick="navigate('admin'); closeDropdown()">⚙ Admin Panel</a>` : ''}
         <a onclick="navigate('profile'); closeDropdown()">My Profile</a>
         <a onclick="logout()">Logout</a>
       </div>`;
+    mobileHTML = `
+      ${user.role === 'admin' ? `<a onclick="navigate('admin')">⚙ Admin Panel</a>` : ''}
+      <a onclick="navigate('profile')">My Profile</a>
+      <a onclick="logout()">Logout</a>`;
   } else {
-    menu.innerHTML = `<a class="nav-links a nav-links-item" onclick="openModal('login')" style="font-family:'Syne',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text);cursor:pointer;">Login</a>`;
+    desktopHTML = `<a class="nav-links-item" onclick="openModal('login')" style="font-family:'Syne',sans-serif;font-size:0.82rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text);cursor:pointer;">Login</a>`;
+    mobileHTML = `<a onclick="openModal('login')">Login</a>`;
   }
+
+  if (menu) menu.innerHTML = desktopHTML;
+  if (mobileMenu) mobileMenu.innerHTML = mobileHTML;
 }
 
 function toggleDropdown() { $('#user-dd')?.classList.toggle('open'); }
