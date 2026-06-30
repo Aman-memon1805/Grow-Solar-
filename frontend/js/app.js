@@ -115,7 +115,7 @@ function renderAuthForm(mode) {
     box.innerHTML = `
       <button class="modal-close" onclick="closeModal()">✕</button>
       <h2>Welcome Back</h2>
-      <p>Log in to your SolarVolt account</p>
+      <p>Log in to your Grow Energy Solar account</p>
       <div class="form-group"><label>Email</label><input id="m-email" type="email" placeholder="you@example.com"/></div>
       <div class="form-group"><label>Password</label><input id="m-pass" type="password" placeholder="••••••••"/></div>
       <button class="btn-primary btn-block" style="margin-top:0.5rem" onclick="handleLogin()">Login</button>
