@@ -124,7 +124,7 @@ function renderAuthForm(mode) {
     box.innerHTML = `
       <button class="modal-close" onclick="closeModal()">✕</button>
       <h2>Create Account</h2>
-      <p>Join SolarVolt to track your quotes</p>
+      <p>Join Grow Energy Solar to track your quotes</p>
       <div class="form-group"><label>Full Name</label><input id="m-name" type="text" placeholder="Rahul Sharma"/></div>
       <div class="form-group"><label>Email</label><input id="m-email" type="email" placeholder="you@example.com"/></div>
       <div class="form-group"><label>Phone</label><input id="m-phone" type="tel" placeholder="+91 98765 43210"/></div>

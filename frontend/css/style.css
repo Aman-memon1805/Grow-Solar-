@@ -378,6 +378,15 @@ footer p { font-size: 0.8rem; color: var(--muted); }
   text-decoration: underline;
 }
 
+#nav-user-menu-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  #nav-user-menu { display: none; }
+  #nav-user-menu {
+    display: none !important;
+  }
+  #nav-user-menu-mobile {
+    display: list-item !important;
+  }
 }
