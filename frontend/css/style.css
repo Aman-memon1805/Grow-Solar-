@@ -312,6 +312,24 @@ footer p { font-size: 0.8rem; color: var(--muted); }
   .hamburger { display: flex; }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .form-row { grid-template-columns: 1fr; }
+
+    /* ← for mobile view */
+  #nav-user-menu {
+    display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nav-user-menu {
+    margin-right: 0.5rem;
+    font-size: 0.78rem;
+  }
 }
 
 /* WhatsApp Floating Button */
@@ -337,4 +355,25 @@ footer p { font-size: 0.8rem; color: var(--muted); }
 
 .whatsapp-btn:hover {
   transform: scale(1.1);
+}
+
+/* Developer Credit Bar */
+#dev-credit {
+  background: #0D0D0D;
+  border-top: 1px solid #2A2A2A;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.78rem;
+  color: #8A7A6A;
+}
+
+#dev-credit a {
+  color: #FF6B00;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#dev-credit a:hover {
+  text-decoration: underline;
 }
